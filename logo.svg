@@ -1,0 +1,60 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="200" cy="200" r="190" fill="#0a0e14" stroke="#4dd4e8" stroke-width="4"/>
+    
+    <!-- Medical/Lab beaker icon (left side) -->
+    <g transform="translate(80, 120)">
+        <path d="M 20 0 L 60 0 L 60 50 L 70 80 L 10 80 L 20 50 Z" 
+              fill="none" stroke="#4dd4e8" stroke-width="3"/>
+        <line x1="20" y1="0" x2="20" y2="-10" stroke="#4dd4e8" stroke-width="3"/>
+        <line x1="60" y1="0" x2="60" y2="-10" stroke="#4dd4e8" stroke-width="3"/>
+        <circle cx="40" cy="50" r="4" fill="#e84d8a"/>
+        <circle cx="30" cy="60" r="3" fill="#f4c542"/>
+        <circle cx="50" cy="58" r="3" fill="#4dd4e8"/>
+    </g>
+    
+    <!-- Arrow connecting both sides -->
+    <path d="M 150 180 L 250 180" stroke="#e84d8a" stroke-width="4" 
+          marker-end="url(#arrowhead)"/>
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" 
+                refX="8" refY="3" orient="auto">
+            <polygon points="0 0, 10 3, 0 6" fill="#e84d8a"/>
+        </marker>
+    </defs>
+    
+    <!-- Neural network/AI icon (right side) -->
+    <g transform="translate(250, 140)">
+        <!-- Nodes -->
+        <circle cx="0" cy="0" r="8" fill="#4dd4e8"/>
+        <circle cx="0" cy="40" r="8" fill="#4dd4e8"/>
+        <circle cx="0" cy="80" r="8" fill="#4dd4e8"/>
+        
+        <circle cx="40" cy="10" r="8" fill="#e84d8a"/>
+        <circle cx="40" cy="40" r="8" fill="#e84d8a"/>
+        <circle cx="40" cy="70" r="8" fill="#e84d8a"/>
+        
+        <circle cx="80" cy="20" r="8" fill="#f4c542"/>
+        <circle cx="80" cy="60" r="8" fill="#f4c542"/>
+        
+        <!-- Connections -->
+        <line x1="0" y1="0" x2="40" y2="10" stroke="#4dd4e8" stroke-width="2" opacity="0.6"/>
+        <line x1="0" y1="0" x2="40" y2="40" stroke="#4dd4e8" stroke-width="2" opacity="0.6"/>
+        <line x1="0" y1="40" x2="40" y2="10" stroke="#4dd4e8" stroke-width="2" opacity="0.6"/>
+        <line x1="0" y1="40" x2="40" y2="40" stroke="#4dd4e8" stroke-width="2" opacity="0.6"/>
+        <line x1="0" y1="40" x2="40" y2="70" stroke="#4dd4e8" stroke-width="2" opacity="0.6"/>
+        <line x1="0" y1="80" x2="40" y2="40" stroke="#4dd4e8" stroke-width="2" opacity="0.6"/>
+        <line x1="0" y1="80" x2="40" y2="70" stroke="#4dd4e8" stroke-width="2" opacity="0.6"/>
+        
+        <line x1="40" y1="10" x2="80" y2="20" stroke="#e84d8a" stroke-width="2" opacity="0.6"/>
+        <line x1="40" y1="40" x2="80" y2="20" stroke="#e84d8a" stroke-width="2" opacity="0.6"/>
+        <line x1="40" y1="40" x2="80" y2="60" stroke="#e84d8a" stroke-width="2" opacity="0.6"/>
+        <line x1="40" y1="70" x2="80" y2="60" stroke="#e84d8a" stroke-width="2" opacity="0.6"/>
+    </g>
+    
+    <!-- Text -->
+    <text x="200" y="320" font-family="monospace" font-size="28" font-weight="bold" 
+          fill="#4dd4e8" text-anchor="middle">FROM LAB</text>
+    <text x="200" y="350" font-family="monospace" font-size="28" font-weight="bold" 
+          fill="#e84d8a" text-anchor="middle">TO MODELS</text>
+</svg>
